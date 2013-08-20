@@ -57,6 +57,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/odyssey/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
 
+# Xposed Stuff
+PRODUCT_COPY_FILES += \
+    vendor/odyssey/prebuilt/common/app/AppSettings.apk:system/app/AppSettings.apk \
+    vendor/odyssey/prebuilt/common/app/XposedInstaller.apk:system/app/XposedInstaller.apk 
+
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
 
@@ -75,7 +80,8 @@ PRODUCT_PACKAGES += \
     NoiseField \
     Galaxy4 \
     LiveWallpapersPicker \
-    PhaseBeam
+    PhaseBeam \
+    HALO
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
@@ -130,7 +136,7 @@ endif
 # Prepare for 4.3 weekly beta.2
 PRODUCT_VERSION_MAJOR = 4.3
 PRODUCT_VERSION_MINOR = build
-PRODUCT_VERSION_MAINTENANCE = beta.5
+PRODUCT_VERSION_MAINTENANCE = beta.6
 ifdef ODYSSEY_BUILD_EXTRA
     ODYSSEY_POSTFIX := -$(ODYSSEY_BUILD_EXTRA)
 endif
