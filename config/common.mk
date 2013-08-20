@@ -77,11 +77,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     HoloSpiralWallpaper \
+    HALO \
     NoiseField \
     Galaxy4 \
     LiveWallpapersPicker \
     PhaseBeam \
-    HALO
+    RoundR
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
