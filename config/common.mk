@@ -74,12 +74,12 @@ PRODUCT_PACKAGES += \
     AppSettings \
     Basic \
     HoloSpiralWallpaper \
+    HALO \
     NoiseField \
     Galaxy4 \
     LiveWallpapersPicker \
     PhaseBeam \
     RoundR \
-    HALO \
     XposedInstaller
 
 # Extra Optional packages
@@ -133,9 +133,9 @@ endif
 
 # Versioning System
 # Prepare for 4.3 weekly beta.2
-PRODUCT_VERSION_MAJOR = 4.3
+PRODUCT_VERSION_MAJOR = 1.3
 PRODUCT_VERSION_MINOR = build
-PRODUCT_VERSION_MAINTENANCE = beta.6
+PRODUCT_VERSION_MAINTENANCE = beta.7
 ifdef ODYSSEY_BUILD_EXTRA
     ODYSSEY_POSTFIX := -$(ODYSSEY_BUILD_EXTRA)
 endif
