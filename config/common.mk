@@ -55,12 +55,8 @@ PRODUCT_COPY_FILES += \
 
 # Workaround for NovaLauncher zipalign fails
 PRODUCT_COPY_FILES += \
-    vendor/odyssey/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
-
-# Xposed Stuff
-PRODUCT_COPY_FILES += \
-    vendor/odyssey/prebuilt/common/app/AppSettings.apk:system/app/AppSettings.apk \
-    vendor/odyssey/prebuilt/common/app/XposedInstaller.apk:system/app/XposedInstaller.apk 
+    vendor/odyssey/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
+    vendor/odyssey/prebuilt/common/app/KLPC3.1.apk:system/app/KLP.apk
 
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
@@ -75,13 +71,16 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
+    AppSettings \
     Basic \
     HoloSpiralWallpaper \
     NoiseField \
     Galaxy4 \
     LiveWallpapersPicker \
     PhaseBeam \
-    HALO
+    RoundR \
+    HALO \
+    XposedInstaller
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
