@@ -11,7 +11,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
+    ro.build.selinux=1 \
+    persist.sys.root_access=1 
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -133,9 +134,9 @@ endif
 
 # Versioning System
 # Prepare for 4.3 weekly beta.2
-PRODUCT_VERSION_MAJOR = 1.3
-PRODUCT_VERSION_MINOR = build
-PRODUCT_VERSION_MAINTENANCE = beta.7
+PRODUCT_VERSION_MAJOR = v-2
+PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MAINTENANCE = RC-1
 ifdef ODYSSEY_BUILD_EXTRA
     ODYSSEY_POSTFIX := -$(ODYSSEY_BUILD_EXTRA)
 endif
