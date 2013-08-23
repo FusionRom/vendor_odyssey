@@ -1,2 +1,1 @@
-add_lunch_combo odyssey_mako-userdebug
-add_lunch_combo odyssey_ville-userdebug
+add_lunch_combo fusion_mako-userdebug
