@@ -81,8 +81,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhaseBeam \
     RoundR \
-    XposedInstaller
-
+    
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     DashClock \
